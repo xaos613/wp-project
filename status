@@ -1,0 +1,389 @@
+[33mcommit 73a79c158ee7a64b1a62ecae5ffa2abc2815d1e2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 18:31:11 2025 +0300
+
+    ./wp-helm
+
+[33mcommit 4b7f43ba31fb7abb5d7ce64b65d2fe245ce3b90b[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 18:26:07 2025 +0300
+
+    ./wp-helm
+
+[33mcommit e4e643caa727d4acb713a467771ab2b5cd672404[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 18:22:00 2025 +0300
+
+    beauty
+
+[33mcommit 446635e75dcfe456d6ceee6f3dd758ef6a2d346b[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 17:18:18 2025 +0300
+
+    sscp
+
+[33mcommit 4e1bec242fca906155fd57becd281349fec3c575[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 17:17:35 2025 +0300
+
+    scp
+
+[33mcommit feadfa0c6cab461fafa73b771627d78ff57a2f1a[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:49:16 2025 +0300
+
+    dsad
+
+[33mcommit f9e86ec28c3e2c00132d9c45e3e47a7a2fbc6aea[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:48:17 2025 +0300
+
+    fdsdf
+
+[33mcommit 0b7c0457d14640ad062c0f71ab98b7446d7af109[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:46:50 2025 +0300
+
+    token 2
+
+[33mcommit f30ec66d28df6fd4ac19b1c0e618d9e108bf010f[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:38:20 2025 +0300
+
+    Push helm repo
+
+[33mcommit 74ca227141108334bd3461967902e369eda7cf14[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:21:56 2025 +0300
+
+    git
+
+[33mcommit 6c3cb629cd0029f68ba79a62c204fbe08b9484eb[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:16:08 2025 +0300
+
+    helm_repo
+
+[33mcommit 0a865b1d8acb59a917b9cf1431e2b235eb6081fc[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:14:54 2025 +0300
+
+    sd
+
+[33mcommit 29793e06c75ff963ff828288f94043b11c2cebf6[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:13:58 2025 +0300
+
+    git remote -v
+
+[33mcommit 9ae5db85c3edbd6a33a73707a7ec2a704f580473[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:13:12 2025 +0300
+
+    helm
+
+[33mcommit d64f76c8a4edb1b4bc0784f200f02198700b48ad[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:12:26 2025 +0300
+
+    HELM_REPO_URL
+
+[33mcommit 7a7a0874f5b66e3d8a04e87c49324bcfb6fa64d5[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:11:42 2025 +0300
+
+    dsa
+
+[33mcommit 734f7e922cf69c343449c676011bfa9bd461f0eb[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:10:04 2025 +0300
+
+    git remote -v
+
+[33mcommit aa5a754443b8798176e9bd41902be88e279f8b8e[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 13:07:26 2025 +0000
+
+    Add App
+
+[33mcommit 79df08bc6a8bfe5c4cfacd38548103d37070d404[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:07:07 2025 +0300
+
+    con
+
+[33mcommit 86a29ce66d370cb6461bec7ed9628762b0c0e9fb[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 13:04:01 2025 +0000
+
+    Add App
+
+[33mcommit 530322a97ba7f563b3d82543060e99f04764baea[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 16:02:07 2025 +0300
+
+    repo
+
+[33mcommit 2dca02a3503660ee29c2cd2345b74d5e2ca00230[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:53:59 2025 +0300
+
+    Project_HELM_REPO
+
+[33mcommit 194582fec58fe7ea0a5ae07a3d53c11cc37152ca[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:46:10 2025 +0300
+
+    permissions
+
+[33mcommit 0d936f448a0883d8d92967313a7c143d958b820b[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:41:39 2025 +0300
+
+    xaos613/wp-project
+
+[33mcommit 9447e13aa9d4cd8911a376157c03c9c956f00778[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:39:33 2025 +0300
+
+    gtr
+
+[33mcommit 5ff8f67ea2a65c3839f554b2476e01969c8f596d[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:36:34 2025 +0300
+
+    GIT_TOKEN
+
+[33mcommit b2a6447cd9ce8d0c8cfba44c391684474928c54a[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:25:12 2025 +0300
+
+    ${HELM_REPO_URL}
+
+[33mcommit 217f0e6776fa7acd01233269ff9b0ce0548e1772[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:20:20 2025 +0300
+
+    push
+
+[33mcommit 06f6d1b937fe028b726c61f4b233317d63127b51[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:15:49 2025 +0300
+
+    sa
+
+[33mcommit 47ac33934347b5dfa5e5944db16169c33ff29ac2[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:06:42 2025 +0300
+
+    re
+
+[33mcommit 057b1f00051f72ce2e2561653835a71964efc4bf[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 15:05:17 2025 +0300
+
+    cahrl
+
+[33mcommit d6b9caa75510dedbf095517a9f5d84b8d6f22ad2[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:55:21 2025 +0300
+
+    .helm-repo/
+
+[33mcommit dfa419ea9da4550041cdafe1c3051be5e79943cb[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:50:08 2025 +0300
+
+    cat .helm-repo/index.yaml
+
+[33mcommit 5c7e229ae848ba4be35d1995aeac91d81cec7c91[m[33m ([m[1;33mtag: [m[1;33mnew_one[m[33m, [m[1;33mtag: [m[1;33mdsd[m[33m)[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:43:00 2025 +0300
+
+    .helm-repo/index.yaml
+
+[33mcommit 9f5f80b404ccc4669749ac0183dc506b16d94182[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:41:50 2025 +0300
+
+    HELM_REPO_URL
+
+[33mcommit fb95da7686b96d8806acce7599a63fb9e7fd0d76[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:40:30 2025 +0300
+
+    index
+
+[33mcommit 3495aeef56f6ab84ced4464398499607bab4ebbb[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:37:42 2025 +0300
+
+    no
+
+[33mcommit 1ad3fb91484ac21dbd7969271180468357175d65[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:35:36 2025 +0300
+
+    /
+
+[33mcommit 3830dd6f0bbe57e7ac4ab4cd3e273c2e1e2a8a97[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:34:21 2025 +0300
+
+    $CHART_PATH
+
+[33mcommit 432166b3d1acc7d09d538abc94067e69a1e7b4c8[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:33:23 2025 +0300
+
+    wp-helm
+
+[33mcommit 0d769d76085798c116d999ceced84868d60580b3[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:32:02 2025 +0300
+
+    ls -la
+
+[33mcommit 80cd8d1fea75e27c67dbfcdf371fc793ef77c4a2[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:27:05 2025 +0300
+
+    Chart.yaml
+
+[33mcommit 9a96c6c743cf852aa77cb4c10eba42dbade3059e[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:25:12 2025 +0300
+
+    grep Blog
+
+[33mcommit 134ceb2c44b5cd3b069244677b64ad82767103bf[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:18:32 2025 +0300
+
+    sed
+
+[33mcommit 09133a04bd61b674207fd574fb24fc616369ea93[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:11:26 2025 +0300
+
+    wp-project rem
+
+[33mcommit d93c41d1d37192646e63ab1d2f07600fe4e54e8d[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 14:08:43 2025 +0300
+
+    process-helm-chart
+
+[33mcommit 094076ac5eae2166338379c5ccabab2f8258277d[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:30:07 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 642e8dfab1e5065a8cf008e90beb0a7a20402862[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:28:06 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 777b5cb8e7d25f5599d16a07fa03a67c85b41a61[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:27:04 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 3c8be3b2580337a73f83e0e0822b01602cfcf447[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:21:52 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit d496129eabf04875b2de40253277f70a48aec6de[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:20:35 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 45b454fa6770b5ba015b14be3802491d4cdc4891[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:15:09 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 914e955b3d28b3001f770520e832d615e1d42b84[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 13:10:08 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit bee4bad45296199ee196da9a67edaa035dc46181[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 12:53:20 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 7459a4605d0e2836b5f59522705277b2675013f2[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 12:51:22 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 19f0720156787838e38a6a73db2803fa727fb175[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 12:46:52 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 3fd9d8106df4a80975259f7b4a1d6a154decb3cb[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 12:41:40 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit a74465597c3c07d1c01f9c70c8fe10541e4680ef[m
+Author: xaos613 <80524692+xaos613@users.noreply.github.com>
+Date:   Thu Mar 6 12:35:44 2025 +0300
+
+    Update ci-cd.yml
+
+[33mcommit 47817e95d0259792ca300dbb06e5b5da5f4e090f[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 12:25:54 2025 +0300
+
+    db name
+
+[33mcommit 19c651179b42ff9272f00d4bdb09e2b59c64e3a8[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 12:18:35 2025 +0300
+
+    echo
+
+[33mcommit 4ca9b29cef8949946a9bef89b3daf28b4e694d58[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 12:16:30 2025 +0300
+
+    ip a
+
+[33mcommit 4c714e3a95c64b2bda47ef5038da3b827de57db8[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 12:13:01 2025 +0300
+
+    no
+
+[33mcommit 546ccdc11626cd3a7b83b51a08ece8cffac25845[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 12:10:22 2025 +0300
+
+    test
+
+[33mcommit d370038f2f3a6b2622bcd7e100509491552fcd93[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 11:52:02 2025 +0300
+
+    first
+
+[33mcommit 0b61d03f528e050bd0ffc3634e9bc610d12353d5[m
+Author: Dmitry Sholomitski <xaos613@gmail.com>
+Date:   Thu Mar 6 11:11:03 2025 +0300
+
+    first commit
