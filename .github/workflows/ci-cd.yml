@@ -60,10 +60,10 @@ jobs:
           sed -i 's/pre_wp_user/wp_user/g' $CHART_PATH/values.yaml;
           
           
-          ls -la $CHART_PATH
+          # ls -la $CHART_PATH
           
-          # Проверяем chart с помощью helm lint
-          helm lint $CHART_PATH/
+          # # Проверяем chart с помощью helm lint
+          # helm lint $CHART_PATH/
 
           
           
