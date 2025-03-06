@@ -86,6 +86,8 @@ jobs:
           
         env:
           HELM_REPO_URL: https://xaos613.github.io/Project_HELM_REPO/
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
 
           
 
