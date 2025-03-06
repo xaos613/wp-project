@@ -74,7 +74,7 @@ jobs:
 
           cat .helm-repo/index.yaml
 
-          helm repo index .helm-repo --url HELM_REPO_URL
+          helm repo index .helm-repo --url ${HELM_REPO_URL}
 
           git config --local user.email "xaos613@gmail.com"
           git config --local user.name "Dmitry Sholomitski"
