@@ -18,7 +18,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/ansible
-            # scp -r /home/xaos/project/wordpress/themes/ root@192.168.208.19:/mnt/test/sa2-30-24/sholomitski_d/prod-nfs-wordpress-pvc-de1f7ddd-bf3e-465a-adfd-c1cb2c139d11/wordpress/wp-content/
+            scp -r /home/xaos/project/wordpress/themes/ root@192.168.208.19:/mnt/test/sa2-30-24/sholomitski_d/prod-nfs-wordpress-pvc-de1f7ddd-bf3e-465a-adfd-c1cb2c139d11/wordpress/wp-content/
             ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"            
   
   ansible_notification:
