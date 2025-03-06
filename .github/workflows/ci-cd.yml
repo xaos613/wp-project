@@ -70,10 +70,11 @@ jobs:
             helm repo index .helm-repo --url ${HELM_REPO_URL}
           fi
           
-          
+          ls -la .helm-repo/
+
           cat .helm-repo/index.yaml
 
-          dd
+          
         env:
           HELM_REPO_URL: ${{ secrets.HELM_REPO_URL }}
 
