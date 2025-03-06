@@ -474,10 +474,10 @@ livenessProbe:
     ##   value: https
     ##
     httpHeaders: []
-  initialDelaySeconds: 120
-  periodSeconds: 10
-  timeoutSeconds: 5
-  failureThreshold: 6
+  initialDelaySeconds: 360
+  periodSeconds: 20
+  timeoutSeconds: 10
+  failureThreshold: 30
   successThreshold: 1
 ## @param readinessProbe.enabled Enable readinessProbe on WordPress containers
 ## @skip readinessProbe.httpGet
@@ -503,10 +503,10 @@ readinessProbe:
     ##   value: https
     ##
     httpHeaders: []
-  initialDelaySeconds: 30
-  periodSeconds: 10
-  timeoutSeconds: 5
-  failureThreshold: 6
+  initialDelaySeconds: 360
+  periodSeconds: 20
+  timeoutSeconds: 10
+  failureThreshold: 30
   successThreshold: 1
 ## @param startupProbe.enabled Enable startupProbe on WordPress containers
 ## @skip startupProbe.httpGet
