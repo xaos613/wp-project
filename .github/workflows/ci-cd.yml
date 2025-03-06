@@ -4,21 +4,22 @@ on:
     branches:
     - master
 jobs:
-#   install-db:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Check out the repository
-#         uses: actions/checkout@v4
-#       - name: Connect to remote server via SSH
-#         uses: appleboy/ssh-action@master
-#         with:
-#           host: ${{ secrets.MY_HOST }}
-#           username: ${{ secrets.USER }}
-#           password: ${{ secrets.PASSWORD }}
-#           port: ${{ secrets.PORT }}
-#           script: |
-#             cd ~/ansible
-# #            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"
+  install-db:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Connect to remote server via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.MY_HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd ~/ansible
+#            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"
+              scp -r /home/xaos/project/wordpress/themes/ root@192.168.208.19:/mnt/test/sa2-30-24/sholomitski_d/prod-nfs-wordpress-pvc-de1f7ddd-bf3e-465a-adfd-c1cb2c139d11/wordpress/wp-content/
 
 #   ansible_notification:
 #     name: Ansible notification
