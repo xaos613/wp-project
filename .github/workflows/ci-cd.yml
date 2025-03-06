@@ -59,8 +59,13 @@ jobs:
           # Заменяем pre_wp_user на wp_user
           sed -i 's/pre_wp_user/wp_user/g' $CHART_PATH/values.yaml;
           
+          
+          cat $CHART_PATH/values.yaml | grep Blog
+          
           # Проверяем chart с помощью helm lint
-          helm lint .
+          helm lint $CHART_PATH
+
+          
           
           # Создаем директорию для упакованных чартов
           mkdir -p .helm-repo
