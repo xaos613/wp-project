@@ -89,7 +89,7 @@ jobs:
           
           git remote add helm_repo HELM_REPO_URL
 
-          HELM_REPO_URL
+          git remote -v
           
           # git push
 
