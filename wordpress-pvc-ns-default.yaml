@@ -1,0 +1,22 @@
+  GNU nano 7.2                                            wordpress-pvc-ns-pre.yaml
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: default
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-wordpress
+  namespace: default
+  labels:
+    storage.k8s.io/name: nfs
+    storage.k8s.io/part-of: kubernetes-complete-reference
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-client
+  resources:
+    requests:
+      storage: 1Gi
