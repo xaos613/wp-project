@@ -59,19 +59,18 @@ jobs:
           # Заменяем pre_wp_user на wp_user
           sed -i 's/pre_wp_user/wp_user/g' $CHART_PATH/values.yaml;
           
-          
-          # ls -la $CHART_PATH
-          
-          # # Проверяем chart с помощью helm lint
-          # helm lint $CHART_PATH/
+                    
+          # Проверяем chart с помощью helm lint
+          helm lint $CHART_PATH
 
-          
-          
+                  
           # Создаем директорию для упакованных чартов
           mkdir -p .helm-repo/
           
           # Упаковываем чарт
-          helm package . -d .helm-repo
+          helm package $CHART_PATH -d .helm-repo
+
+          ls -la .helm-repo
           
           # Генерируем или обновляем index.yaml
           if [ -f ".helm-repo/index.yaml" ]; then
@@ -79,6 +78,9 @@ jobs:
           else
             helm repo index .helm-repo --url ${HELM_REPO_URL}
           fi
+
+
+          cat index.yaml
       #   env:
       #     HELM_REPO_URL: ${{ secrets.HELM_REPO_URL }}
           
