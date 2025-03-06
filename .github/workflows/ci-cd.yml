@@ -29,8 +29,8 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_COLOR: ${{ job.status }}
-        SLACK_MESSAGE: "MariaDB install and database create successfully!"
-        SLACK_TITLE: MariaDB install status
+        SLACK_MESSAGE: "MySQL install and database created!"
+        SLACK_TITLE: DB install status
         SLACK_USERNAME: GitHub
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
