@@ -91,7 +91,7 @@ jobs:
 
           git remote -v
           
-          # git push
+          git push helm_repo master
 
 
           
