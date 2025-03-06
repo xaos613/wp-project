@@ -18,7 +18,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/ansible
-            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"
+#            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"
   notification:
     name: Ansible notification
     runs-on: ubuntu-latest
