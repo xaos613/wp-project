@@ -34,8 +34,97 @@ jobs:
         SLACK_USERNAME: GitHub
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
-
-
-
-
-
+  process-helm-chart:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'latest'
+          
+      - name: Process Helm chart
+        run: |
+          CHART_PATH="wp-project/wp-helm"
+          
+          # Заменяем "Pre-prod" на "prod" (независимо от регистра)
+          find $CHART_PATH -type f -exec sed -i 's/PRE Blog!/PROD Blog!' {} \;
+          
+          # Заменяем pre_wp_base на wp_base
+          find $CHART_PATH -type f -exec sed -i 's/pre_wp_base/wp_base/g' {} \;
+          
+          # Заменяем pre_wp_user на wp_user
+          find $CHART_PATH -type f -exec sed -i 's/pre_wp_user/wp_user/g' {} \;
+          
+          # Проверяем chart с помощью helm lint
+          helm lint .
+          
+          # Создаем директорию для упакованных чартов
+          mkdir -p .helm-repo
+          
+          # Упаковываем чарт
+          helm package . -d .helm-repo
+          
+          # Генерируем или обновляем index.yaml
+          if [ -f ".helm-repo/index.yaml" ]; then
+            helm repo index .helm-repo --url ${HELM_REPO_URL} --merge .helm-repo/index.yaml
+          else
+            helm repo index .helm-repo --url ${HELM_REPO_URL}
+          fi
+      #   env:
+      #     HELM_REPO_URL: ${{ secrets.HELM_REPO_URL }}
+          
+      # - name: Upload chart to Helm repository
+      #   run: |
+      #     # Используем различные способы публикации в зависимости от вашего репозитория
+          
+      #     # Вариант 1: Если ваш Helm репозиторий - это GitHub Pages в этом же репозитории
+      #     if [ "$HELM_REPO_TYPE" = "github-pages" ]; then
+      #       # Копируем чарты в директорию для GitHub Pages
+      #       mkdir -p ./docs/charts
+      #       cp .helm-repo/*.tgz ./docs/charts/
+      #       cp .helm-repo/index.yaml ./docs/charts/
+            
+      #       # Коммитим и пушим изменения
+      #       git config --global user.name "GitHub Actions"
+      #       git config --global user.email "actions@github.com"
+      #       git add ./docs/charts
+      #       git commit -m "Update Helm charts"
+      #       git push
+          
+      #     # Вариант 2: Если ваш Helm репозиторий - это отдельный сервер (например, Chartmuseum)
+      #     elif [ "$HELM_REPO_TYPE" = "chartmuseum" ]; then
+      #       # Устанавливаем helm-push плагин
+      #       helm plugin install https://github.com/chartmuseum/helm-push.git
+            
+      #       # Добавляем репозиторий и загружаем чарт
+      #       helm repo add myrepo ${HELM_REPO_URL}
+      #       helm cm-push .helm-repo/*.tgz myrepo
+          
+      #     # Вариант 3: Если ваш Helm репозиторий - это S3 или другое облачное хранилище
+      #     elif [ "$HELM_REPO_TYPE" = "s3" ]; then
+      #       # Устанавливаем AWS CLI
+      #       apt-get update && apt-get install -y awscli
+            
+      #       # Загружаем файлы в S3
+      #       aws s3 cp .helm-repo/ s3://${HELM_S3_BUCKET}/charts/ --recursive
+          
+      #     # Вариант 4: Если используется Harbor или другой Docker registry с поддержкой Helm
+      #     elif [ "$HELM_REPO_TYPE" = "harbor" ]; then
+      #       # Логин в Harbor
+      #       echo "$HARBOR_PASSWORD" | helm registry login ${HELM_REPO_URL} -u ${HARBOR_USERNAME} --password-stdin
+            
+      #       # Загружаем чарт
+      #       for chart in .helm-repo/*.tgz; do
+      #         helm push $chart oci://${HELM_REPO_URL}/charts
+      #       done
+      #     fi
+      #   env:
+      #     HELM_REPO_TYPE: ${{ secrets.HELM_REPO_TYPE }}  # github-pages, chartmuseum, s3, harbor
+      #     HELM_REPO_URL: ${{ secrets.HELM_REPO_URL }}
+      #     HELM_S3_BUCKET: ${{ secrets.HELM_S3_BUCKET }}
+      #     HARBOR_USERNAME: ${{ secrets.HARBOR_USERNAME }}
+      #     HARBOR_PASSWORD: ${{ secrets.HARBOR_PASSWORD }}        
