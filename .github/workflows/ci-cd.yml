@@ -87,7 +87,7 @@ jobs:
           git add .
           git commit -m "Add App "  || echo "No changes to commit"
           
-          git remote add helm_repo HELM_REPO_URL
+          git remote add helm_repo https://xaos613.github.io/Project_HELM_REPO/
 
           git remote -v
           
