@@ -128,7 +128,7 @@ wordpressFirstName: Dmirty
 wordpressLastName: Sholomitski
 ## @param wordpressBlogName Blog name
 ##
-wordpressBlogName: PRE Blog!
+wordpressBlogName: PROD Blog!
 ## @param wordpressTablePrefix Prefix to use for WordPress database tables
 ##
 wordpressTablePrefix: wp_
@@ -1201,13 +1201,13 @@ externalDatabase:
   port: 3306
   ## @param externalDatabase.user External Database username
   ##
-  user: pre_wp_user
+  user: wp_user
   ## @param externalDatabase.password External Database user password
   ##
   password: password
   ## @param externalDatabase.database External Database database name
   ##
-  database: pre_wp_base
+  database: wp_base
   ## @param externalDatabase.existingSecret The name of an existing secret with database credentials. Evaluated as a template
   ## NOTE: Must contain key `mariadb-password`
   ## NOTE: When it's set, the `externalDatabase.password` parameter is ignored
