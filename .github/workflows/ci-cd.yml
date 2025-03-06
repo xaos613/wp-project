@@ -48,7 +48,7 @@ jobs:
           
       - name: Process Helm chart
         run: |
-          CHART_PATH="wp-project/wp-helm"
+          CHART_PATH="./wp-helm"
           
           # Заменяем "Pre-prod" на "prod" (независимо от регистра)
           find $CHART_PATH -type f -exec sed -i 's/PRE Blog!/PROD Blog!' {} \;
