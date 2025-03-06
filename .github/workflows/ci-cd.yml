@@ -104,7 +104,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.GIT_TOKEN }}
         with:
-          source-directory: ./helm-repo/
+          source-directory: .helm-repo/
           destination-github-username: xaos613
           destination-repository-name: Project_HELM_REPO
           user-email: xaos613@gmail.com
