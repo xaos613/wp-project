@@ -87,7 +87,7 @@ jobs:
           git add .
           git commit -m "Add App "  || echo "No changes to commit"
           
-          git remote -v
+          git remote add origin HELM_REPO_URL
           
           # git push
 
