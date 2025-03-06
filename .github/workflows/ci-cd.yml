@@ -86,7 +86,10 @@ jobs:
           git config --local user.name "Dmitry Sholomitski"
           git add .
           git commit -m "Add App "  || echo "No changes to commit"
-          git push
+          
+          git remote -v
+          
+          # git push
 
 
           
