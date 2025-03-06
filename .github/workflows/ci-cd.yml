@@ -87,17 +87,28 @@ jobs:
           git add .
           git commit -m "Add App "  || echo "No changes to commit"
           
-          git remote add helm_repo https://github.com/xaos613/Project_HELM_REPO
+          # git remote add helm_repo https://github.com/xaos613/Project_HELM_REPO
 
-          git remote -v
+          # git remote -v
           
-          git push helm_repo master
+          # git push helm_repo master
 
 
           
         env:
           HELM_REPO_URL: https://xaos613.github.io/Project_HELM_REPO/
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+      
+      - name: Push helm repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GIT_TOKEN }}
+        with:
+          source-directory: ./helm-repo/
+          destination-github-username: xaos613
+          destination-repository-name: helm
+          user-email: xaos613@gmail.com
+          target-branch: "master"    
 
 
           
