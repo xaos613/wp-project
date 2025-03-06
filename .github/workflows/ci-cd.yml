@@ -63,7 +63,7 @@ jobs:
           ls -la $CHART_PATH
           
           # Проверяем chart с помощью helm lint
-          helm lint $CHART_PATH
+          helm lint $CHART_PATH/
 
           
           
