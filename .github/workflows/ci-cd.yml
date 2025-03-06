@@ -17,6 +17,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            ip a
             cd ~/ansible
             ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_${{ secrets.DB_NAME }}"
 
