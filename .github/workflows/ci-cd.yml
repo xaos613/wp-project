@@ -20,16 +20,22 @@ jobs:
             cd ~/ansible
 #            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"
 
-  build:
+  ansible_notification:
+    name: Ansible notification
     runs-on: ubuntu-latest
-
+    needs: install_mariadb
     steps:
-      - name: Send Slack Notification
-        uses: 8398a7/action-slack@v3
-        with:
-          status: ${{ job.status }}
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: project-notify
+        SLACK_COLOR: ${{ job.status }}
+        SLACK_MESSAGE: "MariaDB install and database create successfully!"
+        SLACK_TITLE: MariaDB install status
+        SLACK_USERNAME: GitHub
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+
 
 
 
