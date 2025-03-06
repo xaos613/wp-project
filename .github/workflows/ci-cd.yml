@@ -51,13 +51,13 @@ jobs:
           CHART_PATH="./wp-helm"
           
           # Заменяем "Pre-prod" на "prod" (независимо от регистра)
-          find $CHART_PATH -type f -exec sed -i 's/PRE Blog!/PROD Blog!' {} \;
+          sed -i 's/PRE Blog!/PROD Blog!/g' $CHART_PATH/values.yaml ;
           
           # Заменяем pre_wp_base на wp_base
-          find $CHART_PATH -type f -exec sed -i 's/pre_wp_base/wp_base/g' {} \;
+          sed -i 's/pre_wp_base/wp_base/g' $CHART_PATH/values.yaml;
           
           # Заменяем pre_wp_user на wp_user
-          find $CHART_PATH -type f -exec sed -i 's/pre_wp_user/wp_user/g' {} \;
+          sed -i 's/pre_wp_user/wp_user/g' $CHART_PATH/values.yaml;
           
           # Проверяем chart с помощью helm lint
           helm lint .
