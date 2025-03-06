@@ -1,16 +1,23 @@
-name: Check remote host and push report
+name: CD-CD
 on:
   push:
     branches:
     - master
 jobs:
-  hello:
+  install-db::
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.13'
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Connect to remote server via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.MY_HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd ~/ansible
+            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_${{ secrets.DB_NAME }}"
 
-    - run: python hello.py
+            
