@@ -29,7 +29,7 @@ jobs:
       env:
         SLACK_CHANNEL: project-notify
         SLACK_COLOR: ${{ job.status }}
-        SLACK_MESSAGE: "MySQL DB install and database installed!"
+#        SLACK_MESSAGE: "MySQL DB install and database installed!"
         SLACK_TITLE: MySQL status
         SLACK_USERNAME: GitHub
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
