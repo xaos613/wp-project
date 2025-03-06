@@ -81,8 +81,8 @@ jobs:
 
 
           cat index.yaml
-      #   env:
-      #     HELM_REPO_URL: ${{ secrets.HELM_REPO_URL }}
+        env:
+          HELM_REPO_URL: ${{ secrets.HELM_REPO_URL }}
           
       # - name: Upload chart to Helm repository
       #   run: |
