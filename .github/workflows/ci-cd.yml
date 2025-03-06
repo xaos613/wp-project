@@ -20,14 +20,18 @@ jobs:
             cd ~/ansible
 #            ansible-playbook -i inv.yaml mysql.yaml -u root -e "user_db=${{ secrets.DB_USER }} pass_db=${{ secrets.DB_PASS }} name_db=${{ secrets.DB_NAME }}"
 
-  ansible_notification:
-    name: Send Slack Notification
-    uses: 8398a7/action-slack@v3
-    with:
-      status: ${{ job.status }}
-      author_name: 'GitHub Actions'
-      commit_hash: ${{ github.sha }}
-      commit_link: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    if: always()
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Slack Notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          author_name: 'GitHub Actions'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+
+
+
+
